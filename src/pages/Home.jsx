@@ -115,11 +115,12 @@ export default function Home() {
               width: '100%',
               height: '110%',
               marginTop: '-5%',
-              background: `
+              backgroundColor: heroColor,
+              backgroundImage: `
                 url("${heroFabricBg}"),
                 repeating-linear-gradient(0deg, rgba(42,31,23,0) 0px, rgba(42,31,23,0) 3px, rgba(200,185,168,0.08) 3px, rgba(200,185,168,0.08) 4px),
                 repeating-linear-gradient(90deg, rgba(42,31,23,0) 0px, rgba(42,31,23,0) 3px, rgba(200,185,168,0.08) 3px, rgba(200,185,168,0.08) 4px),
-                radial-gradient(ellipse at 30% 60%, color-mix(in srgb, ${heroColor} 30%, white) 0%, ${heroColor} 60%, color-mix(in srgb, ${heroColor} 60%, black) 100%)
+                radial-gradient(ellipse at 30% 60%, ${heroColor} 0%, color-mix(in srgb, ${heroColor}, black 40%) 100%)
               `,
               backgroundSize: '400px 400px, 8px 8px, 8px 8px, 100% 100%',
               transition: 'background 0.5s ease',

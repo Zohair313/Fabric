@@ -26,6 +26,9 @@ function App() {
       {loading && <Preloader />}
       {!loading && (
         <>
+          <div style={{ position: 'fixed', bottom: '10px', left: '10px', background: 'rgba(0,0,0,0.5)', color: 'white', padding: '5px', fontSize: '10px', zIndex: 999999, pointerEvents: 'none' }}>
+            System Live: v1.0.4
+          </div>
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
